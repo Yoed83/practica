@@ -1,0 +1,30 @@
+* {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  padding: 1rem;
+}
+
+.box-container {
+  padding-bottom: 4rem;
+}
+.box {
+  width: 7rem;
+  height: 7rem;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boxItem {
+  width: 0.5;
+  height: 0.5rem;
+  background: white;
+  padding: 0.5rem;
+  list-style: none;
+  margin: 0.15rem;
+}
