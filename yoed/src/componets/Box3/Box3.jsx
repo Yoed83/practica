@@ -23,7 +23,7 @@ export default function Box3() {
     visible: {
       x: 0,
       opacity: 1,
-      staggerChildren: 0.2,
+      staggerChildren: 0.3,
     },
   };
 
