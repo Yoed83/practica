@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import Button from "../Button/Button";
 
 export default function Box5() {
   const control = useAnimation();
 
   return (
-    <div className="box-container">
-      <button
+    <div className="box-container space-x-4 space-y-6">
+      <Button
         onClick={() => {
           control.start({
-            x: 1500,
+            x: "40rem",
             transition: { duration: 2 },
           });
         }}
       >
         Move Rigth
-      </button>
-      <button
+      </Button>
+      <Button
         onClick={() => {
           control.start({
             x: 0,
@@ -25,8 +26,8 @@ export default function Box5() {
         }}
       >
         Move Left
-      </button>
-      <button
+      </Button>
+      <Button
         onClick={() => {
           control.start({
             borderRadius: "50%",
@@ -35,8 +36,8 @@ export default function Box5() {
         }}
       >
         Circle
-      </button>
-      <button
+      </Button>
+      <Button
         onClick={() => {
           control.start({
             borderRadius: 0,
@@ -45,15 +46,15 @@ export default function Box5() {
         }}
       >
         Square
-      </button>
-      <button
+      </Button>
+      <Button
         onClick={() => {
           control.stop();
         }}
       >
         Stop
-      </button>
-      <motion.div className="box" animate={control}></motion.div>
+      </Button>
+      <motion.div className="box ml-0" animate={control}></motion.div>
     </div>
   );
 }
